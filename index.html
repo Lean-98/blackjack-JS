@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blackjack</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/CSS/styles.css" />
+
+  </head>
+  <body>
+
+    <header class="titulo">BlackJack</header>
+
+    <div class="row py-3">
+      <div id="divBotones" class="col text-center">
+        <button id="btnNuevo" class="btn btn-danger m-1">Nuevo Juego</button>
+        <button id="btnPedir"   disabled="disabled" class="btn btn-primary m-1">Pedir Carta</button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-warning m-1">Detener</button>
+      </div>
+    </div>
+
+  <div class="row container" >
+    <div class="col">
+      <h1>Jugador - <small></small></h1>
+      <div id="jugador-cartas" class="divCartas">
+        <!-- <img class="carta" src="../assets/cartas/10H.png"> -->
+      </div>
+    </div>
+
+  <div class="row container">
+    <div class="col">
+      <h1>Computadora - <small></small></h1>
+      <div id="computadora-cartas" class="divCartas">
+        <!-- <img class="carta" src="../assets/cartas/10S.png"> -->
+      </div>
+    </div>
+  </div>
+
+    <script src="../assets/js/sweetalert2.al.min.js"></script>
+    <script src="../assets/js/underscore-min.js"></script>
+    <script src="../assets/js/juego-min.js"></script>
+     
+
+    <script>
+
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            miModulo.nuevoJuego();    
+        });
+  
+   </script>
+
+    
+    <footer class="footer">
+      <!-- Copyright footnote -->
+      <p>Todos los derechos Reservados 2022&copy; </p> 
+      <!-- Contact link -->
+      <address>
+      Contact <a href="https://github.com/Lean-98">me</a>
+      </address>
+    </footer>
+
+  </body>
+</html>
